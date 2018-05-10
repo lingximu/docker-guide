@@ -1,0 +1,31 @@
+{
+  "name": "firstfly.cn",
+  "version": "0.0.1",
+  "description": "private server entry",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenzhongchen27/firstfly.cn.git"
+  },
+  "author": "xuefei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenzhongchen27/firstfly.cn/issues"
+  },
+  "homepage": "https://github.com/chenzhongchen27/firstfly.cn#readme",
+  "dependencies": {
+    "@koa/cors": "^2.2.1",
+    "commander": "^2.15.0",
+    "config": "^1.30.0",
+    "dotenv": "^5.0.1",
+    "http-proxy": "^1.16.2",
+    "koa": "^2.5.0",
+    "koa-conditional-get": "^2.0.0",
+    "koa-etag": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2"
+  }
+}
