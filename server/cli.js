@@ -14,6 +14,7 @@ program
         });
         app.listen(options.port, (err) => {
             console.info(`Server listen on ${options.port}`);
+            console.error('one error log!')
         });
     });
 

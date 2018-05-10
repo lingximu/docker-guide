@@ -1,0 +1,14 @@
+{
+    "apps": [{
+        "name": "node-doker-demo",
+        "script": "node",
+        "args": [
+            "cli.js",
+            "app"
+        ],
+        "error_file": "logs/app/stderr.log",
+        "out_file": "logs/app/stdout.log",
+        "pid_file": "tmp/pids/app.pid",
+        "merge_logs": true,
+    }]
+}

@@ -1,0 +1,12 @@
+FROM keymetrics/pm2:8-alpine
+
+RUN mkdir -p /home/project
+COPY . /home/project
+
+ENV NODE_ENV=production
+
+EXPOSE 8000
+VOLUME [ "/home/project/server/logs" ]
+WORKDIR /home/project/server
+
+ENTRYPOINT [ "pm2-runtime", "start", "apps.json"]

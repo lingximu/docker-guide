@@ -1,0 +1,16 @@
+version: "2"
+services:
+  node1:
+    build: ./
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/home/project
+    command: "node cli.js app"
+  node2:
+    build: ./
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/home/project
+    command: "node cli.js app"
